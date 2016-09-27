@@ -130,6 +130,58 @@
                     <img class="stretch" data-src="images/haskell-logo.png"></img>
                 </section>
 
+                <section data-markdown>
+                    <script type="text/template">
+                    ```haskell
+                    $ let identity = \x -> x
+
+                    $ identity "Hallo!"
+                    "Hallo!"
+
+                    $ (identity identity) "Hallo!"
+                    "Hallo!"
+                    ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                    # Parametricity
+
+                    ```haskell
+                    $ :t identity
+                    identity :: t -> t
+                    ```
+
+                    a.k.a. [Money for Nothing and Theorems for Free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/)
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                    # Hoogle & Hayoo
+
+                    <img class="stretch" data-src="images/hoogle.png"></img>
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                    # Worlds best imperative language
+                    ```haskell
+                    main :: IO ()
+                    main = do putStrLn "Hello, what is your name?"
+                              name <- getLine
+                              putStrLn ("Hello, " ++ name ++ "!")
+                    ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                    </script>
+                </section>
 
             </div>
 
@@ -175,7 +227,7 @@
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-37054299-3', 'auto');
+          ga('create', 'UA-37054299-4', 'auto');
           ga('send', 'pageview');
         </script>
 
