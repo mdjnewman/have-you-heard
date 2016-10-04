@@ -91,7 +91,7 @@
 
                     > A <del>class</del> function should have only one reason to change.
 
-                    Small, focussed functions are good too!
+                    Small, focused functions are good too!
                     </script>
                 </section>
 
@@ -99,9 +99,9 @@
                     <script type="text/template">
                     ## Open/closed principle
 
-                    > Software entities should be open for extension, but closed for modification
+                    > Software entities should be open for extension, but closed for modification.
 
-                    Composition to the rescue!
+                    Composition and higher-order functions to the rescue!
 
                     `( f ∘ g )( x ) = f ( g( x ) )`
                     </script>
@@ -110,18 +110,36 @@
                 <section data-markdown>
                     <script type="text/template">
                     ## Liskov substitution principle
+
+                    > Objects in a program should be replaceable with instances
+                    > of their subtypes without altering the correctness of that program.
+
+                    Don't surprise people!
+
+                    Also, parametric polymorphism largely avoids these issues.
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
                     ## Interface segregation principle
+
+                    > Clients should not be forced to depend upon interfaces
+                    > that they do not use.
+
+                    Specifying small data types is still good practice.
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
                     ## Dependency inversion principle
+
+                    > Depend upon abstractions. Do not depend upon concretions.
+
+                    FP (especially Haskell) is all about abstractions!
+
+                    <small>(and IOC containers are just the poor cousin of partial functions)</small>
                     </script>
                 </section>
 
@@ -141,7 +159,7 @@
                     $ identity "Hallo!"
                     "Hallo!"
 
-                    $ (identity identity) "Hallo!"
+                    $ (identity . identity) "Hallo!"
                     "Hallo!"
                     ```
                     </script>
@@ -156,7 +174,7 @@
                     identity :: t -> t
                     ```
 
-                    a.k.a. [Money for nothing and your theorems for free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/)
+                    a.k.a. [money for nothing and your theorems for free](https://bartoszmilewski.com/2014/09/22/parametricity-money-for-nothing-and-theorems-for-free/)
                     </script>
                 </section>
 
@@ -183,16 +201,19 @@
 
                 <section data-markdown>
                     <script type="text/template">
+                    # FP in Java I
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
+                    # FP in Java II
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
+                    # FP in Java III
                     </script>
                 </section>
 
