@@ -201,19 +201,43 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                    # FP in Java I
+                    ## Higher-order functions - map
+
+                    ```java
+upperCaseStrings = strings.stream()
+                          .map(String::toUpperCase)
+                          .collect(toList());
+                    ```
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                    # FP in Java II
+                    ## Higher-order functions - filter
+
+                    ```java
+nonEmptyStrings = strings.stream()
+                         .filter(x -> !x.isEmpty())
+                         .collect(toList());
+                    ```
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                    # FP in Java III
+                    ## Higher-order functions - reduce
+
+                    ```java
+                    sum = numbers.stream().reduce(0, Integer::sum);
+                    ```
+
+                    or
+
+                    ```java
+                    sum = numbers.parallelStream().reduce(0, Integer::sum);
+                    ```
+
+                    Free parallelism too!
                     </script>
                 </section>
 
